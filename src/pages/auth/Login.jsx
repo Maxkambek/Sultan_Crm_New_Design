@@ -1,19 +1,21 @@
 import { useState } from "react";
 import closeEye from "../../assets/closeEye.svg";
 import openEye from "../../assets/opneEye.svg";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isPassword, setIsPassword] = useState(true);
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const nav = useNavigate();
   return (
     <>
       <div className="Login">
         <div className="container">
           <div className="row">
-            <div className="col-2"></div>
-            <form className="col-8 login_form" action="">
+            <div className="col-3"></div>
+            <form className="col-6 login_form" action="">
               <div className="form_header">
                 <div className="form_h">Login to Account</div>
                 <div className="form_p">
@@ -61,6 +63,7 @@ const Login = () => {
                   disabled={isLoading}
                   className="btn myBtn"
                   type="submit"
+                  onClick={() => nav("/dashboard")}
                 >
                   {isLoading && (
                     <i className="spinner-border spinner-border-sm text-blue text-dark me-2"></i>

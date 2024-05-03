@@ -6,6 +6,10 @@ import Packages from "./pages/admin/Packages";
 import Staff from "./pages/admin/Staff";
 import StaffDetail from "./pages/admin/StaffDetail";
 import Clients from "./pages/admin/Clients";
+import Branchs from "./pages/admin/Branchs";
+import FAQ from "./pages/admin/FAQ";
+import Profile from "./pages/admin/Profile";
+import BranchDetail from "./pages/admin/BranchDetail";
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
             <Route element={<Staff />} path="/staff" />
             <Route element={<StaffDetail />} path="/staff/:id" />
             <Route element={<Clients />} path="/clients" />
+            <Route element={<Branchs />} path="/branch" />
+            <Route element={<BranchDetail />} path="/branch/:id" />
+            <Route element={<Profile />} path="/profile" />
+            <Route element={<FAQ />} path="/faq" />
           </Route>
         </Routes>
       </HashRouter>
