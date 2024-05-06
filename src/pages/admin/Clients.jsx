@@ -4,6 +4,7 @@ const Clients = () => {
       <div className="Clients">
         <div className="client_container">
           <div className="client_header">Barcha Mijozlar {"Ro'yhati"}</div>
+
           <div className="clients_filter_box">
             <div className="search">
               <div className="group">
@@ -23,7 +24,6 @@ const Clients = () => {
               </select>
             </div>
           </div>
-
           <div className="clients_main_box">
             <div className="clients_header">
               <div className="main_h_1">#</div>

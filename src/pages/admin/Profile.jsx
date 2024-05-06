@@ -4,9 +4,11 @@ import { useState } from "react";
 const Profile = () => {
   const [modal, setModal] = useState(false);
   const [image, setImage] = useState("");
+
   const uData = [
     4000, 3000, 2000, 2780, 1890, 2390, 3490, 2450, 2600, 2070, 2190, 3000,
   ];
+
   const xLabels = [
     "Jan",
     "Feb",
@@ -21,13 +23,14 @@ const Profile = () => {
     "Nov",
     "Dec",
   ];
+  
   return (
     <div className="StaffDetail">
       <div className="staff_container">
         <div className="staff_header">Mening profilim</div>
         <div className="staff_profile_box">
           <div className="row d-flex">
-            <div className={`col-4 ${modal ? "d-none" : ""}`}>
+            <div className={`col-4 profile_first ${modal ? "d-none" : ""}`}>
               <div className="for_bg">
                 <div className="staff_prof">
                   <img src="/img/avatar.svg" alt="" />
@@ -57,7 +60,7 @@ const Profile = () => {
               </div>
             </div>
             <div
-              className={`col-4 profile_first ${modal ? "active" : "d-none"}`}
+              className={`col-4 profile_seconf ${modal ? "active" : "d-none"}`}
             >
               <div className="for_bg">
                 <div className="prof_item_avatar">

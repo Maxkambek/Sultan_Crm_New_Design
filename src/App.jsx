@@ -10,6 +10,7 @@ import Branchs from "./pages/admin/Branchs";
 import FAQ from "./pages/admin/FAQ";
 import Profile from "./pages/admin/Profile";
 import BranchDetail from "./pages/admin/BranchDetail";
+import PackageDetail from "./pages/admin/PackageDetail";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route element={<AdminLayout />}>
             <Route element={<Dashboard />} path="/dashboard" />
             <Route element={<Packages />} path="/package" />
+            <Route element={<PackageDetail />} path="/package/:id" />
             <Route element={<Staff />} path="/staff" />
             <Route element={<StaffDetail />} path="/staff/:id" />
             <Route element={<Clients />} path="/clients" />
